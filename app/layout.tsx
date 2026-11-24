@@ -6,7 +6,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Avaani — Lucknow\'s Premier Companion Directory',
-  description: 'Discover distinguished companions for cultural events, corporate gatherings, travel, and intimate occasions in Lucknow. Curated. Consent-based. 18+. ',
+  description: 'Discover distinguished companions for cultural events, corporate gatherings, travel, and intimate occasions in Lucknow. Curated. Consent-based. 18+.',
   robots: { index: true, follow: true },
   openGraph: {
     title: 'Avaani — Lucknow\'s Premier Companion Directory',
