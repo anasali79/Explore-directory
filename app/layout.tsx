@@ -1,11 +1,12 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { SmoothScroll } from '@/components/smooth-scroll'
+import { AgeVerification } from '@/components/age-verification'
 import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Avaani — Lucknow\'s Premier Companion Directory',
-  description: 'Discover distinguished companions for cultural events, corporate gatherings, travel, and intimate occasions in Lucknow. Curated. Consent-based. 18+.',
+  description: 'Discover distinguished companions for cultural events, corporate gatherings, travel, and intimate occasions in Lucknow. Curated. Consent-based. 18+. ',
   robots: { index: true, follow: true },
   openGraph: {
     title: 'Avaani — Lucknow\'s Premier Companion Directory',
@@ -65,6 +66,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         />
       </head>
       <body className="antialiased">
+        <AgeVerification />
         <SmoothScroll />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
