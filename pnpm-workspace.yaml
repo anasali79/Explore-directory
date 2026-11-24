@@ -1,4 +1,16 @@
-pmOnFail: ignore
+packages:
+  - '.'
+
+dangerouslyAllowAllBuilds: true
+
+allowBuilds:
+  esbuild: true
+  workerd: true
+  '@cloudflare/workerd-linux-64': true
+  '@cloudflare/workerd-darwin-arm64': true
+  '@cloudflare/workerd-darwin-64': true
+  '@cloudflare/workerd-windows-64': true
+  sharp: true
 
 onlyBuiltDependencies:
   - '@cloudflare/workerd-darwin-64'
@@ -8,6 +20,8 @@ onlyBuiltDependencies:
   - esbuild
   - sharp
   - workerd
+
+pmOnFail: ignore
 
 minimumReleaseAgeExclude:
   - '@next/*'
