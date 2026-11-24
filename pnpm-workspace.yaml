@@ -3,3 +3,4 @@ pmOnFail: ignore
 minimumReleaseAgeExclude:
   - '@next/*'
   - next
+  - lenis@1.3.28
